@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx @11ty/eleventy --serve",
+    "start": "node api.js && npx @11ty/eleventy --serve",
     "css": "npx tailwindcss -i ./style.css -o ./_site/css/styles.css --watch",
-    "build": "npx @11ty/eleventy"
+    "build": "node api.js && npx @11ty/eleventy"
   },
   "keywords": [],
   "author": "",
